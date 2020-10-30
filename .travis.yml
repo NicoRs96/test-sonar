@@ -1,0 +1,12 @@
+language: java 
+jdk: 
+- openjdk11
+
+addons: 
+  sonarcloud: 
+   organization: "nicors96"
+   token: "1c3ca78ef564891a92326a99565bc7142d5eb248"
+
+script: 
+- ant build 
+- sonar-scanner
